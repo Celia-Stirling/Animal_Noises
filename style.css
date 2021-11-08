@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  font-family: verdana, sans-serif;
+}
+
+h2 {
+  position: absolute;
+  top: 20px;
+  left: 380px;
+}
+
+.game-container {
+  position: relative;
+  width: 822px;
+  height: 627px;
+  border: 4px solid black;
+  margin: 0 auto;
+}
+
+.background {
+  z-index: 0;
+}
+
+.animal {
+  z-index: 1;
+  position: absolute;
+}
+
+#pig {
+  bottom: 25px;
+  left: 100px;
+  width: 150px;
+}
+
+#cow {
+  bottom:  60px;
+  left: 400px;
+  width: 250px
+}
+
+#hen {
+  bottom: 450px;
+  left: 400px;
+  width: 75px;
+}
+
+#dog {
+  bottom: 170px;
+  left: 20px;
+  width: 150px;
+}
+
+#sheep {
+  bottom: 150px;
+  left: 675px;
+  width: 125px;
+}
