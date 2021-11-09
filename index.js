@@ -2,11 +2,13 @@ var animals = document.querySelectorAll(".animal");
 
 for (var i=0; i < animals.length; i++) {animals[i].addEventListener('click', function() {
   playSound(this.id[0]);
+  animalAnimation(this.id[0]);
 });
 }
 
 document.addEventListener("keydown", function() {
   playSound(event.key);
+  animalAnimation(event.key);
 })
 
 function playSound(animal) {
@@ -34,4 +36,12 @@ function playSound(animal) {
     default: console.log(animal);
 
   }
+}
+
+function animalAnimation(key) {
+  var currentAnimal = document.querySelector("." + key);
+  currentAnimal.classList.add("pressed");
+  setTimeout(function() {
+    currentAnimal.classList.remove("pressed");
+  }, 100)
 }
